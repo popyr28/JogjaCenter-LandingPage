@@ -1,5 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+}
+
+header{
+    padding-bottom: 500px;
 }
 
 #video-jogja {
@@ -49,22 +59,130 @@ body{
     margin-bottom: 0px;
 }
 
-.navbar-icon{
-    padding-top: 450px;
-}
-.navbar-icon img{
-    max-width: 200px;
-    margin-left: 80px;
+.navbar-brand img{
+    max-width: 150px;
 }
 
-.sub-heading{
+.about{
     padding: 0px;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: normal;
-    letter-spacing: 10px;
-    text-align: center;
+    letter-spacing: 7px;
 }
 
-#dropdown{
-    float: right;
+.navbar-light .navbar-nav .nav-link{
+    color: #4E4E4E;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    font-weight: bold;
+    color: #DA251D !important;
+}
+
+.btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -18px !important;
+    height: 58x;
+    width: 120px;
+}
+
+.btn-login{
+    background-color: #DA251D;
+    color: #ffffff;
+}
+
+.btn-login:hover{
+    background-color: #e05f59;
+    color: white;
+}
+
+.jc-text{
+    text-align: left;
+}
+
+.about-jc{
+    padding: 10px 10px 30px;
+}
+
+.jc-detail{
+    align-items: center;
+    padding-left: 50px;
+}
+
+.jc-text{
+    padding-top: 100px;
+}
+
+#jc-text1{
+    font-weight: lighter;
+    letter-spacing: 7px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0px;
+    right: -70px;
+}
+
+#jc-text1::before{
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #707070;
+    width: 50px;
+    left: -70px;
+    top: 50%;
+}
+
+#jc-text2{
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
+    margin-bottom: 0px;
+}
+
+#jc-text3{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#hero-img{
+    max-height: 400px;
+}
+
+.dimensi-jc{
+    padding-top: 50px;
+}
+
+hr{
+    border: 2px solid #FF7676;
+    width: 160px;
+    align-items: center;
+    margin: auto;
+}
+
+#heading-dimensi1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+#heading-dimensi2{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.dimensi-slide{
+    padding-top: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.group-slide{
+    display: flex;
+}
+.group-slide img{
+    max-width: 50%;
+    margin: auto;
+    padding-left: 50px;
 }

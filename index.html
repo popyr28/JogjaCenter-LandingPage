@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="frontend/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="frontend/libraries/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
     <title>Jogja Center</title>
 </head>
 <body>
-    <div class="hero-section">
+
+<!--hero-section-->
+    <header>
         <video autoplay muted loop id="video-jogja">
             <source src="frontend/images/video-jogja.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
@@ -27,25 +30,111 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="navbar-icon">
-        <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center">
-        <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown">
-        <p class="sub-heading">TENTANG JOGJA CENTER</p>
-    </div>
-   
-    
-    <nav>
-
-    </nav>
-    <header>
-        
     </header>
-    <main>
 
+    <!--navbar-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+            <a class ="navbar-brand" href="#">
+                <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
+            </a>
+        </nav>
+    
+    <!--heading-nav-->
+        <div class="sub-heading">
+            <div class="text-center">
+                <p class="about">TENTANG JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p>
+            </div>
+        </div>
+    </div>
+    
+    <!--navbar-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+            <a class ="navbar-brand" href="#">
+                <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" 
+                type="button"
+                data-toggle="collapse"
+                data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link active">Beranda</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Tentang</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Dimensi</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Direktori Analisis</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login my-2 my-sm-0">
+                        Masuk
+                    </button>
+                </form>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                        Masuk    
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    
+    <!--main-->
+    <main>
+        <div class="container">
+            <section class="about-jc row">
+                <div class="col-6 about-jc jc-detail jc-text">
+                    <p id="jc-text1">TENTANG</p>
+                    <p id="jc-text2">Jogja Center</p>
+                    <p id="jc-text3">Sistem analitik berbasis big data, fokus pada pengembangan data analitik dan pendukung pengambilan 
+                        keputusan, serta merujuk pada dimensi Jogja Smart Province (JSP)</p>
+                </div>
+                <div class="col-6 about-jc jc-detail">
+                    <img src="frontend/images/hero-ilustrasi.png" alt="" id="hero-img">
+                </div>
+            </section>
+            <div class="sub-heading">
+                <div class="text-center">
+                    <p class="about">DIMENSI JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p>
+                </div>
+            </div>
+            <section class="dimensi-jc">
+                <div class="heading-dimensi text-center">
+                    <hr>
+                    <p id="heading-dimensi1">Dimensi Jogja Center</p>
+                    <p id="heading-dimensi2">Dimensi - dimensi data di Yogyakarta yang di miliki 
+                        Jogja Center</p>
+                </div>
+                <div class="dimensi-slide">
+                    <div class="group-slide">
+                        <img src="frontend/images/card-dimensiPariwisata.png" alt="">
+                        <img src="frontend/images/card-dimensiMobilitas.png" alt="">
+                        <img src="frontend/images/card-dimensiEkonomi.png" alt="">
+                        <img src="frontend/images/card-dimensiLainnya.png" alt="">
+                    </div>
+                </div>
+                <button id="btnPrev">prev</button>
+                <button id="btnNext">next</button>
+            </section>
+        </div>
     </main>
     <footer>
 
     </footer>
+
+    <script src="frontend/scripts/main.js"></script>
 </body>
 </html>
