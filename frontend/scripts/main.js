@@ -12,5 +12,5 @@ dimensiSlide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
 btnNext.addEventListener('click', ()=>{
     dimensiSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
-    console.log(counter)
+    console.log(counter);
 })

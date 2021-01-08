@@ -149,8 +149,18 @@ header{
     max-height: 400px;
 }
 
+
 .dimensi-jc{
     padding-top: 50px;
+    background-color: #FEF4F4;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.content-dimensi{
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 80px;
 }
 
 hr{
@@ -160,14 +170,14 @@ hr{
     margin: auto;
 }
 
-#heading-dimensi1{
+#heading1{
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 0px;
 }
 
-#heading-dimensi2{
+#heading2{
     font-size: 16px;
     font-weight: lighter;
 }
@@ -175,7 +185,7 @@ hr{
 .dimensi-slide{
     padding-top: 20px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .group-slide{
@@ -185,4 +195,131 @@ hr{
     max-width: 50%;
     margin: auto;
     padding-left: 50px;
+}
+
+.content-resume{
+    padding: 70px 80px 80px;
+}
+
+.sub-heading-resume{
+    padding-top: 50px;
+    margin: auto;
+}
+
+.sub-resume{
+    padding: 0px 50px 0px;
+}
+
+#img-resume{
+    max-width: 80px;
+    float: left;
+    padding-right: 20px;
+}
+
+#sub-heading1{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+#sub-heading2{
+    font-weight: lighter;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.direktori-analisis{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FEF4F4;
+}
+
+.content-analisis{
+    padding-top: 30px;
+}
+
+.card{
+    margin: auto;
+    max-width: 900px;
+}
+
+.img-card{
+    max-width: 250px;
+    float: left;
+    padding: 20px;
+}
+
+.card-body{
+    padding-left: 50px;
+}
+
+#title-card{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#text-card{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.tag{
+    font-size: 12px;
+    font-weight: lighter;
+    border-radius: 20px;
+    border: none;
+    background-color: #FEF4F4;
+    color: #DA251D;
+    padding: 5px 14px 5px;
+}
+
+.btn-more{
+    border: none;
+    background-color: #DA251D;
+    padding: 10px 12px 10px;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.contact{
+    padding: 40px 100px 40px;
+    background-color: #444444;
+}
+
+h3{
+    color: #DA251D;
+    padding-bottom: 20px;
+}
+
+.img-contact{
+    max-width: 20px;
+    padding-right: 5px;
+}
+
+.list-contact{
+    font-size: 16px;
+    color: #A7A7A7;
+    font-weight: lighter;
+}
+
+.link-contact{
+    color: #DA251D;
+}
+
+.btn-submit{
+    background-color: #DA251D;
+}
+
+.copyright{
+    background-color: #606060;
+}
+
+.copyright img{
+    max-width: 160px;
+}
+.copyright p{
+    color: #BFBFBF;
+    font-size: 18px;
+    font-weight: normal;
 }
