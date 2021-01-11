@@ -1,16 +1,12 @@
-const dimensiSlide = document.querySelector('.group-slide');
-const dimensiImage = document.querySelectorAll('.group-slide');
+$('.page-scroll').on('click', function(e){
+    var dest = $(this).attr('href');
+    
+    var elementDest = (dest);
+    console.log(elementDest);
 
-const btnPrev = document.querySelector('#btnPrev');
-const btnNext = document.querySelector('#btnNext');
+    $('body').animate({
+        scrollTop: elementDest.offset().top
+    });
 
-let counter = 1;
-const size = dimensiImage[0].clientWidth + dimensiImage[1].clientWidth;
-
-dimensiSlide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
-
-btnNext.addEventListener('click', ()=>{
-    dimensiSlide.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    console.log(counter);
-})
+    e.preventDefault();
+});

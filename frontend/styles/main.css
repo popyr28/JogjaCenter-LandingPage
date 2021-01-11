@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffffff;
@@ -18,7 +19,7 @@ header{
     top: 0;
     width: 100%; 
     
-  }
+}
 
 .hero-content {
     position: absolute;
@@ -26,7 +27,7 @@ header{
     padding: 30px 0px 150px;
     margin-left: 74px;
     margin-top: 40px;
-  }
+}
 
 #img-logo-jogja{
       max-width: 138px;
@@ -68,6 +69,15 @@ header{
     font-size: 22px;
     font-weight: normal;
     letter-spacing: 7px;
+}
+
+.page-scroll{
+    color: #444444;
+}
+
+.page-scroll:hover{
+    color: #5e5e5e;
+    text-decoration: none;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -307,8 +317,35 @@ h3{
     color: #DA251D;
 }
 
+.form-group input[type=name],
+.form-group input[type=email]{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #707070;
+    outline: none;
+    background: transparent;
+    color: #BFBFBF;
+}
+
+.form-group ::-webkit-input-placeholder{
+    color: #BFBFBF;
+}
+
+.form-group textarea{
+    border: none;
+    border-bottom: 1px solid #707070;
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+    color: #BFBFBF;
+}
+
+
 .btn-submit{
     background-color: #DA251D;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .copyright{
