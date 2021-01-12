@@ -9,6 +9,10 @@ body{
     background-color: #ffffff;
 }
 
+#fullpage section{
+    height: 100vh;
+}
+
 header{
     padding-bottom: 500px;
 }
@@ -60,15 +64,12 @@ header{
     margin-bottom: 0px;
 }
 
-.navbar-brand img{
-    max-width: 150px;
-}
-
-.about{
+.sub-heading{
     padding: 0px;
     font-size: 22px;
     font-weight: normal;
     letter-spacing: 7px;
+    margin: auto;
 }
 
 .page-scroll{
@@ -78,6 +79,14 @@ header{
 .page-scroll:hover{
     color: #5e5e5e;
     text-decoration: none;
+}
+
+#navbar{
+    padding-top: 100px;
+}
+
+.navbar-brand img{
+    max-width: 150px;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -161,6 +170,7 @@ header{
 
 
 .dimensi-jc{
+    margin-top: 100px;
     padding-top: 50px;
     background-color: #FEF4F4;
     margin-left: 0px;
@@ -350,6 +360,11 @@ h3{
 
 .copyright{
     background-color: #606060;
+    margin-bottom: 0px;
+}
+
+.copyright p{
+    margin-bottom: 0px;
 }
 
 .copyright img{

@@ -3,116 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="frontend/libraries/js/jquery-3.5.1.min.js"></script>
+    <script src="frontend/libraries/js/jquery.fullpage.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="frontend/libraries/css/bootstrap.css">
     <link rel="stylesheet" href="frontend/styles/main.css">
     <title>Jogja Center</title>
 </head>
 <body>
-
 <!--hero-section-->
-    <header>
-        <video autoplay muted loop id="video-jogja">
-            <source src="frontend/images/video-jogja.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="hero-content">
-            <img src="frontend/images/logo-jogja.png" alt="Provinsi Yogyakarta" id="img-logo-jogja" class="img-fluid">
-            <div class="title">
-                <p id="title1">
-                    DATA CENTER
-                </p>
-                <p id="title2">
-                    Daerah Istimewa Yogyakarta
-                </p>
-                <p id="title3">
-                    ꦝꦲꦺꦫꦃ​ꦆꦱ꧀ꦠꦶꦩꦺꦮ​ꦔꦪꦺꦴꦒꦾꦏꦂꦠ : Dhaérah Istiméwa Ngayogyakarta
-                </p>
+<div id="fullpage">
+    <section>
+        <header>
+            <video autoplay muted loop id="video-jogja">
+                <source src="frontend/images/video-jogja.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-content">
+                <img src="frontend/images/logo-jogja.png" alt="Provinsi Yogyakarta" id="img-logo-jogja" class="img-fluid">
+                <div class="title">
+                    <p id="title1">
+                        DATA CENTER
+                    </p>
+                    <p id="title2">
+                        Daerah Istimewa Yogyakarta
+                    </p>
+                    <p id="title3">
+                        ꦝꦲꦺꦫꦃ​ꦆꦱ꧀ꦠꦶꦩꦺꦮ​ꦔꦪꦺꦴꦒꦾꦏꦂꦠ : Dhaérah Istiméwa Ngayogyakarta
+                    </p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!--navbar-->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none">
-            <a class ="navbar-brand" href="#">
-                <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
-            </a>
-        </nav>
-    
-    <!--heading-nav-->
-        <div class="sub-heading">
-            <div class="text-center">
-                <a href="#navbar" class="page-scroll"><p class="about">TENTANG JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p></a>
-            </div>
-        </div>
-    </div>
-    
-    <!--navbar-->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none" id="navbar">
-            <a class ="navbar-brand" href="#">
-                <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" 
-                type="button"
-                data-toggle="collapse"
-                data-target="#navb">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navb">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link active">Beranda</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Tentang</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Dimensi</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Direktori Analisis</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Kontak</a>
-                    </li>
-                </ul>
-                <form class="form-inline d-sm-block d-md-none">
-                    <button class="btn btn-login my-2 my-sm-0">
-                        Masuk
-                    </button>
-                </form>
-                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                        Masuk    
-                    </button>
-                </form>
-            </div>
-        </nav>
-    </div>
-    
-    <!--main-->
-    <main>
+        <!--navbar-replica-->
         <div class="container">
-            <section class="about-jc row" id="about">
-                <div class="col-6 about-jc jc-detail jc-text">
-                    <p id="jc-text1">TENTANG</p>
-                    <p id="jc-text2">Jogja Center</p>
-                    <p id="jc-text3">Sistem analitik berbasis big data, fokus pada pengembangan data analitik dan pendukung pengambilan 
-                        keputusan, serta merujuk pada dimensi Jogja Smart Province (JSP)</p>
-                </div>
-                <div class="col-6 about-jc jc-detail">
-                    <img src="frontend/images/hero-ilustrasi.png" alt="" id="hero-img">
-                </div>
-            </section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-none">
+                <a class ="navbar-brand" href="#">
+                    <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
+                </a>
+            </nav>
+        
+        <!--heading-nav-->
             <div class="sub-heading">
                 <div class="text-center">
-                    <a href="#dimensi" class="page-scroll"><p class="about">DIMENSI JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p></a>
+                    <a href="#navbar" class="page-scroll"><p class="about">TENTANG JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p></a>
                 </div>
             </div>
         </div>
-            <section class="dimensi-jc" id="dimensi">
+    </section>
+
+    <!--main-->
+    <section>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-none" id="navbar">
+                <a class ="navbar-brand" href="#">
+                    <img src="frontend/images/Logo-JogjaCenter.png" alt="Logo Jogja Center" id="logo-jc">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" 
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav ml-auto mr-5">
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">Tentang</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">Dimensi</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">Direktori Analisis</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">Kontak</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0">
+                            Masuk
+                        </button>
+                    </form>
+                    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            Masuk    
+                        </button>
+                    </form>
+                </div>
+            </nav>
+                <section class="about-jc row" id="about">
+                    <div class="col-6 about-jc jc-detail jc-text">
+                        <p id="jc-text1">TENTANG</p>
+                        <p id="jc-text2">Jogja Center</p>
+                        <p id="jc-text3">Sistem analitik berbasis big data, fokus pada pengembangan data analitik dan pendukung pengambilan 
+                            keputusan, serta merujuk pada dimensi Jogja Smart Province (JSP)</p>
+                    </div>
+                    <div class="col-6 about-jc jc-detail">
+                        <img src="frontend/images/hero-ilustrasi.png" alt="" id="hero-img">
+                    </div>
+                    <div class="sub-heading text-center">
+                        <a href="#dimensi" class="page-scroll"><p class="about">DIMENSI JOGJA CENTER <img src="frontend/images/icon-dropdown.png" alt="" id="dropdown"></p></a>
+                    </div> 
+                </section>
+        </div>
+    </section>
+    
+    <section class="dimensi-jc" id="dimensi">
+            <div class="container">
                 <div class="content-dimensi">
                     <div class="heading-dimensi text-center">
                         <hr>
@@ -128,13 +129,13 @@
                             <img src="frontend/images/card-dimensiLainnya.png" alt="">
                         </div>
                     </div>
-                    <!-- <button id="btnPrev">prev</button>
-                    <button id="btnNext">next</button> -->
                     <div class="slider">
                     </div>
                 </div>
-            </section>
-        <section class="resume-data">
+            </div>
+    </section>
+
+    <section class="resume-data">
             <div class="content-resume">
                 <div class="heading-resume text-center">
                     <hr>
@@ -163,9 +164,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="direktori-analisis">
+    <section class="direktori-analisis">
             <div class="heading-resume text-center">
                 <hr>
                 <p id="heading1">Direktori Analisis</p>
@@ -195,43 +196,47 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contact row">
-            <div class="col-md-8">
-                <h3>Kontak kami</h1>
-                <p class="list-contact"><img src="frontend/images/icon-phone.png" alt="" class="img-contact">+62 274 5661 61 / +62 21 29069516 (Jakarta)</p>
-                <p class="list-contact"><img src="frontend/images/icon-fax.png" alt="" class="img-contact">+62 274 5661 60</p>
-                <p class="list-contact"><img src="frontend/images/icon-email.png" alt="" class="img-contact"><a href="#" class="link-contact">info@gamatechno.com</a></p>
-                <p class="list-contact"><img src="frontend/images/icon-address.png" alt="" class="img-contact">Jl. Cik Di Tiro No.34, Terban. Yogyakarta - 55223 <a href="#" class="link-contact">(Head Office)</a> <br>
-                    Gedung UGM Samator Pendidikan Lantai 10 Jl. Dr. Sahardjo No.83 Tebet, 
-                    Manggarai, Jakarta Selatan - 12850 <a href="#" class="link-contact">(Jakarta Office)</a></p>
-            </div>
-            <div class="col-md-4">
-                <form>
-                    <div class="form-group">
-                        <input type="name" class="form-control" id="nameId" placeholder="Nama Lengkap">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="emailId" placeholder="Alamat Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" class="form-control" id="messageId" cols="50" rows="5" placeholder="Tuliskan Pesan"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-submit form-control">
-                        Kirim
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="copyright text-center">
-            <p><img src="frontend/images/Logo-JogjaCenter–white.png" alt="">2020 Jogja Center | All Rights Reserved</p>
-        </div>
-    </footer>
+    </section>
 
-    <script src="frontend/libraries/js/jquery-3.5.1.min.js"></script>
-    <script src="frontend/scripts/main.js"></script>
-    
+    <!-- footer -->
+    <section>
+        <footer>
+            <div class="contact row">
+                <div class="col-md-8">
+                    <h3>Kontak kami</h1>
+                    <p class="list-contact"><img src="frontend/images/icon-phone.png" alt="" class="img-contact">+62 274 5661 61 / +62 21 29069516 (Jakarta)</p>
+                    <p class="list-contact"><img src="frontend/images/icon-fax.png" alt="" class="img-contact">+62 274 5661 60</p>
+                    <p class="list-contact"><img src="frontend/images/icon-email.png" alt="" class="img-contact"><a href="#" class="link-contact">info@gamatechno.com</a></p>
+                    <p class="list-contact"><img src="frontend/images/icon-address.png" alt="" class="img-contact">Jl. Cik Di Tiro No.34, Terban. Yogyakarta - 55223 <a href="#" class="link-contact">(Head Office)</a> <br>
+                        Gedung UGM Samator Pendidikan Lantai 10 Jl. Dr. Sahardjo No.83 Tebet, 
+                        Manggarai, Jakarta Selatan - 12850 <a href="#" class="link-contact">(Jakarta Office)</a></p>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="nameId" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailId" placeholder="Alamat Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="messageId" cols="50" rows="5" placeholder="Tuliskan Pesan"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit form-control">
+                            Kirim
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p><img src="frontend/images/Logo-JogjaCenter–white.png" alt="">2020 Jogja Center | All Rights Reserved</p>
+            </div>
+        </footer>
+    </section>
+</div>
+<script type="text/javascript">
+    $('#fullpage').fullpage();
+</script>
+
 </body>
 </html>
