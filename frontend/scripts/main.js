@@ -12,15 +12,10 @@
 // });
 
 
-jQuery( document ).ready( function($) {
-    var elementAbout = $('#navbar');
-    console.log(elementAbout.offset());
-    $( window ).scroll( function () {
-        console.log($('body').scroll());
-    //   if ( $('body').scrollTop() > 0 ) {
-    //     $('body').animate({
-    //         scrollTop: elementAbout.offset().top
-    //     });
-    // }
-    });
-  });
+$(window).on("scroll", function(){
+    if($(window).scrollTop() > 200){
+        $(".navbar").addClass("scroll");
+    } else {
+        $(".navbar").removeClass("scroll");
+    }
+});
