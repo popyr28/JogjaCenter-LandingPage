@@ -7,6 +7,7 @@
 body{
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 header{
@@ -186,9 +187,14 @@ header{
 }
 
 .content-dimensi{
-    padding-right: 80px;
-    padding-left: 80px;
-    padding-bottom: 80px;
+    padding: 0px 80px 80px;
+    margin: auto;
+}
+
+
+
+.carousel-indicators .active{
+    background-color: #DA251D;
 }
 
 hr{
@@ -210,20 +216,23 @@ hr{
     font-weight: lighter;
 }
 
-.dimensi-slide{
-    padding-top: 20px;
-    display: flex;
-    /* overflow: hidden; */
+.card{
+    border: none;
+}
+.card img{
+    max-width: 100%;
 }
 
-.group-slide{
-    display: flex;
-    overflow: hidden;
+.content-card p{
+    font-size: 16px;
+    font-weight: 100;
 }
-.group-slide img{
-    max-width: 50%;
-    margin: auto;
-    padding-left: 50px;
+
+.btn.btn-detail{
+    border: 1px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    border-radius: 0px;
 }
 
 .content-resume{
@@ -267,9 +276,27 @@ hr{
     padding-top: 30px;
 }
 
-.card{
+.card.card-analisis{
     margin: auto;
     max-width: 900px;
+    /* background-color:blue; */
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: #7B7A7A;
+    border-radius: 50px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-control-next{
+    margin-right: 50px;
+}
+
+.carousel-control-prev{
+    margin-left: 50px;
 }
 
 .img-card{
@@ -302,8 +329,9 @@ hr{
     padding: 5px 14px 5px;
 }
 
-.btn-more{
+.btn.btn-more{
     border: none;
+    border-radius: 0px;
     background-color: #DA251D;
     padding: 10px 12px 10px;
     color: #ffffff;
@@ -316,7 +344,7 @@ hr{
     background-color: #444444;
 }
 
-h3{
+.contact h3{
     color: #DA251D;
     padding-bottom: 20px;
 }
@@ -372,10 +400,6 @@ h3{
     margin-bottom: 0px;
 }
 
-.copyright p{
-    margin-bottom: 0px;
-}
-
 .copyright img{
     max-width: 160px;
 }
@@ -383,4 +407,5 @@ h3{
     color: #BFBFBF;
     font-size: 18px;
     font-weight: normal;
+    margin-bottom: 0px;
 }

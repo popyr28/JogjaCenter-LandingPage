@@ -17,9 +17,9 @@
                 <source src="frontend/images/video-jogja.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" id="navbar">
-                    <div class="container-fluid">
+                    <div class="container">
                     <a class ="navbar-brand" href="#">
                         <img src="frontend/images/Logo-JogjaCenter–white.png" alt="Logo Jogja Center" id="logo-jc">
                     </a>
@@ -119,16 +119,81 @@
                         <p id="heading2">Dimensi - dimensi data di Yogyakarta yang di miliki 
                             Jogja Center</p>
                     </div>
-                    <div class="dimensi-slide">
-                        <div class="group-slide">
-                            
-                            <img src="frontend/images/card-dimensiPariwisata.png" alt="">
-                            <img src="frontend/images/card-dimensiMobilitas.png" alt="">
-                            <img src="frontend/images/card-dimensiEkonomi.png" alt="">
-                            <img src="frontend/images/card-dimensiLainnya.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slider">
+                    <div class="dimensi-slide pt-4">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card bg-dark">
+                                            <img src="frontend/images/card-dimensiPariwisata.png" alt="">
+                                            <div class="card-img-overlay d-flex align-items-end">
+                                                <div class="content-card text-white pl-3 pb-3">
+                                                    <h3>Pariwisata</h3>
+                                                    <p>Data sentimen, persebaran dan kepadatan kunjungan 
+                                                    tempat wisata beserta akomodasinya di Jogja</p>
+                                                    <a href="#" class="btn btn-detail">Lihat Detail <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card bg-dark">
+                                            <img src="frontend/images/card-dimensiMobilitas.png" alt="">
+                                            <div class="card-img-overlay d-flex align-items-end">
+                                                <div class="content-card text-white pl-3 pb-3">
+                                                    <h3>Mobilitas</h3>
+                                                    <p>Data mobilitas dan kepadatan orang dan lalu lintas 
+                                                        Trans Jogja beserta hostspot massa di Jogja</p>
+                                                    <a href="#" class="btn btn-detail">Lihat Detail <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card bg-dark">
+                                            <img src="frontend/images/card-dimensiEkonomi.png" alt="">
+                                            <div class="card-img-overlay d-flex align-items-end">
+                                                <div class="content-card text-white pl-3 pb-3">
+                                                    <h3>Ekonomi</h3>
+                                                    <p>Data potensi UMKM menurut data e-commerce
+                                                        di Jogja</p>
+                                                    <a href="#" class="btn btn-detail">Lihat Detail <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card bg-dark">
+                                            <img src="frontend/images/card-dimensiLainnya.png" alt="">
+                                            <div class="card-img-overlay d-flex align-items-end">
+                                                <div class="content-card text-white pl-3 pb-3">
+                                                    <h3>Lihat Dimensi Lainnya</h3>
+                                                    <a href="#" class="btn btn-detail">Lihat Detail <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -174,25 +239,59 @@
             </div>
             <div class="content-analisis">
                 <div class="card card-analisis">
-                    <div class="row no-gutters">
-                        <div class="col-md-3">
-                            <img class="img-card" src="frontend/images/direktori analisis.png" alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p id="title-card">ANALISIS MOBILITAS MASYARAKAT DI DIY SELAMA MASA PANDEMI COVID-19 
-                                    DENGAN PSBB</p>
-                                <p id="text-card">Pada penelitian ini dilakukan analisis kepadatan halte TransJogja di wilayah pariwisata Malioboro. Analisis menggunakan 
-                                    data transaksi pada bulan Juli 2019, karena bulan tersebut memiliki data dengan jumlah transaksi menggunakan 
-                                    karena bulan tersebut memiliki data dengan jumlah transaksi ...</p>
-                                <button class="tag">Mobilitas Masyarakat</button>
-                                <button class="tag">Pandemi</button>
-                                <div class="text-right">
-                                    <a href="#"><button class="btn-more">Lihat Selengkapnya <img src="frontend/images/Icon - Down Arrow@2x.png" alt=""></button></a>
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row no-gutters">
+                                <div class="col-md-3">
+                                    <img class="img-card" src="frontend/images/direktoriAnalisis.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p id="title-card">ANALISIS MOBILITAS MASYARAKAT DI DIY SELAMA MASA PANDEMI COVID-19 
+                                            DENGAN PSBB</p>
+                                        <p id="text-card">Pada penelitian ini dilakukan analisis mobilitas dari data komunikasi seluler pada bulan 
+                                            Maret 2020 sampai Mei 2020. Pengukuran mobilitas dilakukan melalui sampling terhadap 
+                                            pengguna komunikasi seluler di ...</p>
+                                        <button class="tag">Mobilitas Masyarakat</button>
+                                        <button class="tag">Pandemi</button>
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-more">Lihat Selengkapnya <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row no-gutters">
+                                <div class="col-md-3">
+                                    <img class="img-card" src="frontend/images/direktoriAnalisis2.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p id="title-card">ANALISIS PERAN TRANSJOGJA SEBAGAI PENDUKUNG REKAYASA
+                                            LALU-LINTAS MALIOBORO</p>
+                                        <p id="text-card">Pada penelitian ini dilakukan analisis kepadatan halte TransJogja di wilayah pariwisata 
+                                            Malioboro. Analisis menggunakan data transaksi pada bulan Juli 2019, karena bulan 
+                                            tersebut memiliki data dengan jumlah transaksi ...</p>
+                                        <button class="tag">Trans Jogja</button>
+                                        <button class="tag">Malioboro</button>
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-more">Lihat Selengkapnya <img src="frontend/images/Icon-DownArrow.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </div>
             </div>
     </section>
