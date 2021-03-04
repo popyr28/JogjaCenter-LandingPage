@@ -207,25 +207,46 @@
                     <p id="heading2">Ringkasan data dari masing - masing dimensi 
                         dalam bentuk diagram</p>
                 </div>
-                <div class="sub-heading-resume row">
-                    <div class="col-4 sub-resume">
-                        <img src="frontend/images/icon-kondisiwisata.png" alt="" id="img-resume">
-                        <p id="sub-heading1">Kondisi Wisata</p>
-                        <p id="sub-heading2">Tempat wisata daerah paling populer di Jogja</p>
-                    </div>
-                    <div class="col-4 sub-resume">
-                        <img src="frontend/images/icon-mobilitaskota.png" alt="" id="img-resume">
-                        <p id="sub-heading1">Mobilitas Kota</p>
-                        <p id="sub-heading2">Mobilitas dan kepadatan orang beserta hotspot massa di Jogja</p>
-                    </div>
-                    <div class="col-4 sub-resume">
-                        <img src="frontend/images/icon-ekonomi.png" alt="" id="img-resume">
-                        <p id="sub-heading1">Ekonomi</p>
-                        <p id="sub-heading2">Persebaran potensi ekonomi di Jogja</p>
-                    </div>
-                    <div class="data">
-
-                    </div>
+                <ul class="sub-heading-resume row">
+                    <li class="col-4">
+                        <a href="javascript:tabSwitch('tab-1', 'chart-1');" id="tab-1" class="tab active-tab" style="text-decoration: none">
+                            <div class="sub-resume">
+                                <hr>
+                                <img src="frontend/images/icon-kondisiwisata.png" alt="" id="img-resume">
+                                <p id="sub-heading1">Kondisi Wisata</p>
+                                <p id="sub-heading2">Tempat wisata daerah paling populer di Jogja</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-4">
+                        <a href="javascript:tabSwitch('tab-2', 'chart-2');" id="tab-2" class="tab" style="text-decoration: none">
+                            <div class="sub-resume">
+                                <hr>
+                                <img src="frontend/images/icon-mobilitaskota.png" alt="" id="img-resume">
+                                <p id="sub-heading1">Mobilitas Kota</p>
+                                <p id="sub-heading2">Mobilitas dan kepadatan orang beserta hotspot massa di Jogja</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-4">
+                        <a href="javascript:tabSwitch('tab-3', 'chart-3');" id="tab-3" class="tab" style="text-decoration: none">
+                            <div class="sub-resume">
+                                <hr>
+                                <img src="frontend/images/icon-ekonomi.png" alt="" id="img-resume">
+                                <p id="sub-heading1">Ekonomi</p>
+                                <p id="sub-heading2">Persebaran potensi ekonomi di Jogja</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div id="chart-1" class="chart">
+                    <canvas id="myChart1"></canvas>
+                </div>
+                <div id="chart-2" class="chart">
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div id="chart-3" class="chart">
+                    <canvas id="myChart3"></canvas>
                 </div>
             </div>
     </section>
@@ -335,6 +356,7 @@
 
 <script src="frontend/libraries/js/jquery-3.5.1.min.js"></script>
 <script src="frontend/libraries/js/bootstrap.js"></script>
+<script src="frontend/libraries/js/Chart.js"></script>
 <script src="frontend/scripts/main.js"></script>
 
 </body>

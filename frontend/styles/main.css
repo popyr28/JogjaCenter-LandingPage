@@ -246,6 +246,36 @@ hr{
 
 .sub-resume{
     padding: 0px 50px 0px;
+    margin-right: 0px;
+}
+
+.sub-resume hr{
+    width:100%;
+    border:2px solid#ECEAEA;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ul.sub-heading-resume{
+    margin: auto;
+    padding: 0px;
+}
+
+ul.sub-heading-resume li{
+    list-style: none;
+    display: inline;
+}
+
+ul.sub-heading-resume li .active-tab hr{
+    border-color: #DA251D;
+}
+
+.tab{
+    color: black;
+}
+
+.tab :hover{
+    color: #929292;
 }
 
 #img-resume{
@@ -264,6 +294,15 @@ hr{
     font-weight: lighter;
     font-size: 12px;
     margin-bottom: 0px;
+}
+
+.chart{
+    padding-top: 50px;
+    width: auto;
+}
+
+#chart-2, #chart-3{
+    display: none;
 }
 
 .direktori-analisis{
